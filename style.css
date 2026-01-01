@@ -4,5 +4,6 @@
 }
 
 .texto_corpo{
-   margin:10%
+   margin:10%;
+   display:flex;
 }
