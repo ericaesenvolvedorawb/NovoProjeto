@@ -9,38 +9,40 @@
     
     <title>Protótipo/CÓDIGOdaAPRENDIZAGEM</title>
 
-    <style>
+    <style>   
+    *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'candara', Segoe UI;
+    }
+
+    root:{
+
+    }
+
+    html {
+            scroll-behavior: smooth;
+    }
         
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   /*max-width: 1200px;
-   width: 100%;
-    /*width: 100%; 
-    max-width: 1200px; 
-    padding: 2rem;
-    margin: 5%;*/
-}
+    body{
+        heigth:100vh;
+        box-sizing:border-box;
+        background-size:cover;
+        background: #ff00dd;
+        background: linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);
+        color:white;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: white;
+    }
         
-body{
-    heigth:100vh;
-    box-sizing:border-box;
-    background-size:cover;
-    background: #ff00dd;
-    background: linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);
-    color:white;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: white;
-}
-        
-.texto_corpo{
-    margin:5%;
-    align-items: center;
-    justify-content:space-between;
-    font-family: 'candara';
-    font-size: 25px;
-}
+    .texto_corpo{
+        margin:5%;
+        align-items: center;
+        justify-content:space-between;
+        font-family: 'candara';
+        font-size: 25px;
+    }
         
 /*.texto_corpo{ width: 100%; }*/
 
@@ -66,9 +68,6 @@ body{
     .texto_corpo{width: 100%; }
 }
 
-html{
-    scroll-behavior: smooth;
-}
          
     </style>
 </head>
