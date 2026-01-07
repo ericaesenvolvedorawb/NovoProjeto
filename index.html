@@ -10,68 +10,75 @@
     <title>Protótipo/CÓDIGOdaAPRENDIZAGEM</title>
 
     <style>   
-    *{
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-       font-family: 'candara', Segoe UI;
-    }
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'candara', Segoe UI;
+        }
 
-    :root {
-        --cor-fundo: #ff00dd; 
-        --cor-gradient: linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);
-        --cor-texto: white;
-    }
+        :root {
+            --cor-fundo: #ff00dd; 
+            --cor-gradient: linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);
+            --cor-texto: white;
+            --cor-tema: yellow;
+        }
 
-    html {
-            scroll-behavior: smooth;
-    }
+        html {
+                scroll-behavior: smooth;
+        }
         
-    body {
-        color: var(--cor-texto);
-        background-color: var(--cor-fundo);
-        background: var(--cor-gradient);
-         /*line-height/espaçamento entre as linhas*/
-        line-height: 1.5;
+        body {
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+            background: var(--cor-gradient);
+             /*line-height/espaçamento entre as linhas*/
+            line-height: 1.5;
 
         
-        heigth:100vh;
-        box-sizing:border-box;
-        background-size:cover;
+            heigth:100vh;
+            box-sizing:border-box;
+            background-size:cover;
     
-    }
-        
-    .texto_corpo {
-        margin:5%;
-        align-items: center;
-        justify-content:space-between;
-        font-family: 'candara';
-        font-size: 25px;
-    }
-        
-/*.texto_corpo{ width: 100%; }*/
+        }
 
-/* Celulares (max-width) */
-@media (max-width: 576px) {
-    .texto_corpo{ display: block;
+        .cabeçalho{
+            display:inline-block;
+            padding: 12px, 30px;
+            background-color: var(--cor-tema);
+        }
+        
+        .texto_corpo {
+            margin:5%;
+            align-items: center;
+            justify-content:space-between;
+            font-family: 'candara';
+            font-size: 25px;
+        }
+        
+        /*.texto_corpo{ width: 100%; }*/
+
+        /* Celulares (max-width) */
+        @media (max-width: 576px) {
+            .texto_corpo{ display: block;
                   width: 100%;
                   margin-bottom: 15px; }
-}
+            }
 
-/* Tablet (max-width) */
-@media (max-width: 577px) and (max-width: 768px) {
-    .texto_corpo{ width: 90%; }
-}
+        /* Tablet (max-width) */
+        @media (max-width: 577px) and (max-width: 768px) {
+            .texto_corpo{ width: 90%; }
+            }
 
-/* Desktop (max-width) */
-@media (max-width: 769px) and (max-width: 1024px) {
-    .texto_corpo{ width: 80%; }
-}
+        /* Desktop (max-width) */
+        @media (max-width: 769px) and (max-width: 1024px) {
+            .texto_corpo{ width: 80%; }
+            }
 
-/* Desktops, acima de 1024px) */
-@media (max-width: 1025px) {
-    .texto_corpo{width: 100%; }
-}
+        /* Desktops, acima de 1024px) */
+        @media (max-width: 1025px) {
+            .texto_corpo{width: 100%; }
+            }
 
          
     </style>
