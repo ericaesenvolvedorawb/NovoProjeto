@@ -32,8 +32,9 @@
 .texto_corpo{ width: 100%; }
 
 /* Celulares (min-width) */
-@media (min-width: 576px) {
-    .texto_corpo{ width: 100%; }
+@media (max-width: 576px) {
+    .texto_corpo{ width: 100%; 
+                font-size: 5px;}
 }
 
 /* Tablet (min-width) */
@@ -43,8 +44,7 @@
 
 /* Desktop (min-width) */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .texto_corpo{ width: 80%; 
-                font-size: 5px;}
+    .texto_corpo{ width: 80%; }
 }
 
 /* Desktops, acima de 1024px) */
