@@ -18,7 +18,8 @@
     }
 
     :root{
-        --cor-fundo: #ff00dd; /*linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);*/
+        --cor-fundo: #ff00dd; 
+        --cor-gradient: linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);
     }
 
     html {
@@ -31,7 +32,7 @@
         background-size:cover;
         /*background: #ff00dd;*/
         background-color: var(--cor-fundo);
-        background: linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);
+        background: var(--cor-gradient); /*linear-gradient(160deg,rgba(255, 0, 221, 1) 0%, rgba(0, 157, 255, 0.83) 68%, rgba(172, 5, 255, 1) 100%);*/
         /*color:white;*/
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: white;
