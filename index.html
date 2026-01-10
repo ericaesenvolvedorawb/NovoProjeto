@@ -96,6 +96,17 @@
             gap: 30px;
         }
 
+         .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: #ffdd40;
+        }
+
         .hero-cabeçalho {
             background: linear-gradient(160deg, var(--cor-primaria) 0%, var(--cor-secundaria) 68%, var(--cor-terciaria) 100%);
             color: white;
@@ -180,7 +191,7 @@
             <nav> 
                 <div class="logo">Código da Aprendizagem</div>
 
-                <div class="nav-menu">
+                <nav class="nav-menu">
                     <a href="#NeuroEducação"> Educação inclusiva </a>
                     <a href="#DiferençaDeTranstornoEdidiculdade"> Diferença entre Transtornos de Aprendizagem e Dificuldades de Aprendizagem </a>
                     <a href="#TranstornosDeAprendizagem"> Transtornos de aprendizagem </a>
@@ -188,7 +199,7 @@
                     <a href="#CódigoDaAprendizagem"> Código da Aprendizagem </a>
                     <a href="#RecursosLúdicos"> Recursos Lúdicos </a>
                     <a href="#SuportePedagógico"> Suporte Pedagógico </a>
-                </div>     
+                </nav>     
                 
                 <button class="menu-toggle" id="MenuToggle">☰</button>
             </nav>
