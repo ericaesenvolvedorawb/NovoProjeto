@@ -82,6 +82,7 @@
         }
 
         .menu-toggle {
+            display: none;
             background: none;
             border: none;
             color: var(--cor-primaria);
@@ -90,20 +91,20 @@
             cursor: pointer;
         }
 
-        .nav-menu {
+        .nav-menu-desktop {
             display: flex;
             list-style: none;
             gap: 30px;
         }
 
-         .nav-menu a {
+         .nav-menu-desktop a {
             color: white;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
 
-        .nav-menu a:hover {
+        .nav-menu-desktop a:hover {
             color: #ffdd40;
         }
 
@@ -148,13 +149,56 @@
         
         /* Celulares (max-width) */
         @media (max-width: 576px) {
-            .texto_corpo{ display: block;
+            /*.texto_corpo{ display: block;
                   width: 100%;
                   margin-bottom: 15px; 
+            }*/
+
+            .container {
+                padding: 0 10px
             }
             
             .hero-cabeçalho {
-                padding: 120px 0 80px;
+                padding: 40px 0;
+            }
+
+            .hero-cabeçalho h1 {
+                font-size: 1.5rem;
+            }
+
+            .menu-toggle {
+                display: block;
+            {
+
+            .nav-menu-mobile {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #6a11cb;
+                padding: 20px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+
+            .nav-menu-mobile.active {
+                display: block;
+            }
+
+            .nav-menu-mobile ul {
+                list-style: none;
+            }
+
+            .nav-menu-mobile li {
+                margin: 15px 0;
+            }
+
+            .nav-menu-mobile a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.1rem;
+                display: block;
+                padding: 10px 0;
             }
 
             section {
@@ -167,6 +211,8 @@
         @media (max-width: 577px) and (max-width: 768px) {
             .texto_corpo{ width: 90%; }
             }
+
+        
         }
         
         /* Desktop (max-width) */
@@ -191,7 +237,7 @@
             <nav> 
                 <div class="logo">Código da Aprendizagem</div>
 
-                <nav class="nav-menu" id="navMenu">
+                <nav class="nav-menu-desktop">
                     <a href="#NeuroEducação"> Educação inclusiva </a>
                     <a href="#DiferençaDeTranstornoEdidiculdade"> Diferença entre Transtornos de Aprendizagem e Dificuldades de Aprendizagem </a>
                     <a href="#TranstornosDeAprendizagem"> Transtornos de aprendizagem </a>
@@ -202,9 +248,21 @@
                 </nav>     
                 
                 <button class="menu-toggle" id="MenuToggle">☰</button>
-            </nav>
-            
+            </nav> 
         </div>
+
+        <nav class="nav-menu-mobile" id="navMenu">
+            <ul>
+                <li><a href="#NeuroEducação"> Educação inclusiva </a></li>
+                <li><a href="#DiferençaDeTranstornoEdidiculdade"> Diferença entre Transtornos de Aprendizagem e Dificuldades de Aprendizagem </a></li>
+                <li><a href="#TranstornosDeAprendizagem"> Transtornos de aprendizagem </a></li>
+                <li><a href="#Adaptações"> Adaptações </a></li>
+                <li><a href="#CódigoDaAprendizagem"> Código da Aprendizagem </a></li>
+                <li><a href="#RecursosLúdicos"> Recursos Lúdicos </a></li>
+                <li><a href="#SuportePedagógico"> Suporte Pedagógico </a></li>
+            </ul>
+        </nav>
+        
     </header>
     
     <main> 
@@ -250,7 +308,7 @@
         });
         
         // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
+        document.querySelectorAll('.nav-menu-mobile a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 menuToggle.textContent = '☰';
