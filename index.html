@@ -16,7 +16,8 @@
            box-sizing: border-box;
            font-family: 'candara', Segoe UI;
         }
-
+        
+        /*elemento raiz/ variáveis para o CSS*/
         :root {
             --cor-fundo: white;
             --cor-fundo-gradient: #ff00dd; 
@@ -27,14 +28,15 @@
             --cor-terciaria: rgba(172, 5, 255, 1);
         }
 
-        html {
+        html {    
+                /*comportamento de rolagem de tela*/
                 scroll-behavior: smooth;
         }
-        
+
+        /* body/configuração dos elementos visiveis*/
         body {
             color: var(--cor-texto);
             background-color: var(--cor-fundo);
-            /*background: var(--cor-gradient);*/
              /*line-height/espaçamento entre as linhas*/
             line-height: 1.5;
 
@@ -88,10 +90,14 @@
             cursor: pointer;
         }
 
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
         .hero-cabeçalho {
             background: linear-gradient(160deg, var(--cor-primaria) 0%, var(--cor-secundaria) 68%, var(--cor-terciaria) 100%);
-            /*background-color: var(--cor-fundo-gradient);
-            background: var(--cor-gradient);*/
             color: white;
             padding: 150px 0 100px;
             margin-top: 80px;
@@ -127,7 +133,8 @@
             font-size: 1.2rem;
         }
         
-
+        /*REPOSITÓRIO DE ADAPTAÇÕES DE DISPOSITIVOS*/
+        
         /* Celulares (max-width) */
         @media (max-width: 576px) {
             .texto_corpo{ display: block;
@@ -162,7 +169,9 @@
             .texto_corpo{width: 100%; }
             }
         }
-         
+
+        /*PROGRAMAÇÃO HTML*/
+        
     </style>
 </head>
 <body>
@@ -170,7 +179,18 @@
         <div class="container">
             <nav> 
                 <div class="logo">Código da Aprendizagem</div>
-                <button class= "menu-toggle">☰</button>
+
+                <nav class="nav-menu">
+                    <a href="#NeuroEducação"> Educação inclusiva </a>
+                    <a href="#DiferençaDeTranstornoEdidiculdade"> Diferença entre Transtornos de Aprendizagem e Dificuldades de Aprendizagem </a>
+                    <a href="#TranstornosDeAprendizagem"> Transtornos de aprendizagem </a>
+                    <a href="#Adaptações"> Adaptações </a>
+                    <a href="#CódigoDaAprendizagem"> Cógigo da Aprendizagem </a>
+                    <a href="#RecursosLúdicos"> Recursos Lúdicos </a>
+                    <a href="#SuportePedagógico"> Suporte Pedagógico </a>
+                </nav>     
+                
+                <button class="menu-toggle" id="MenuToggle">☰</button>
             </nav>
             
         </div>
