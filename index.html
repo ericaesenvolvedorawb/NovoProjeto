@@ -208,12 +208,12 @@
             }
 
             .nav-menu-mobile {
-                display: none;
+                display: block;
                 position: absolute;
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background: #6a11cb;
+                background: var(--cor-roxo);
                 padding: 20px;
                 box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             }
@@ -361,5 +361,15 @@
                 menuToggle.textContent = '☰';
             });
         });
-    
+
+        // Detectar e mostrar tamanho da tela
+        function updateViewportSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            
+            // Determinar tipo de dispositivo
+            let deviceType = 'Desktop';
+            if (width <= 576) deviceType = 'Mobile';
+            else if (width <= 768) deviceType = 'Tablet';
+            else if (width <= 1024) deviceType = 'Desktop Pequeno';
 </script>
