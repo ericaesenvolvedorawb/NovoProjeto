@@ -114,7 +114,16 @@
         }
 
         .menu-toggle:active {
-            color: blue;
+            .nav-menu-mobile {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--cor-roxo);
+                padding: 20px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
         }
 
         .nav-menu-mobile {
